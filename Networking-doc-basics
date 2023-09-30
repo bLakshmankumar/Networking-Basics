@@ -11,4 +11,8 @@ Networking pre-requisites :
      To Connect them through a switch we need an interface on each host, physical or virtual depends on host. 
      To See the interfaces of the host We use ip link Command.
      In this case if we look at the interface named eth0 that we will be using connecting to the switch.
-     Lets assume we have a network with 192.168.1.0 we then assign the servers with ip addresses of the same network. For this we use the command ip addr add 192.168.1.10/24 dev ech0
+     Lets assume we have a network with 192.168.1.0 we then assign the servers with ip addresses of the same network. For this we use the command ip addr add 192.168.1.10/24 dev ech0 and ip addr add 192.168.1.11/24 dev ech0
+     Once the links are up and once Ip addresses are assigned to the servers can now communicate with each other through the switch.
+     The switch can only enab;e communication with in a network. which means it reaceive packets from a host on the network and delivered to other serverswith in the same network.
+
+
