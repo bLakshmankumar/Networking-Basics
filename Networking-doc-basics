@@ -45,3 +45,13 @@ Networking pre-requisites :
       This process ensures that data can be efficiently and reliably transmitted between devices across different networks, 
       overcoming the geographical and topological challenges of the network infrastructure.
       Routing is essential for the functioning of the internet and other computer networks.
+3) Gateway :
+  ----------
+    If Network is a Room, The Gateway is a Door to the outside world, to other networks or to the internet.The systems need to now where the door is to go through that.
+    To see the existing routing configuration on a system use route command.
+      > route command will displays the kernal routing table.
+     IMP :
+     -----
+      To configure a gateway on server b(192.168.1.1) to reach the other server c which is running on other network.(192.168.2.1). run the below command.
+      ip route add 192.168.2.0/24 via 192.168.1.1
+      verify the route process using route command.
