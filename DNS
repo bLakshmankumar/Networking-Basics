@@ -27,7 +27,9 @@
   Ans : Add search yahoo.com entry in /etc/resolv.conf file.
 
 7) Which of the following command is used to query a hostname from a DNS server? 
-    nslookup www.google.com (Nslookup does not consider the entries in the local /etc/hosts file, so if you add an entry into the local /etc/hosts file for your web application and if you try to do an nslookup for that web app and dig 
+    nslookup www.google.com (Nslookup does not consider the entries in the local /etc/hosts file, so if you add an entry into the local /etc/hosts file for your web application and if you try to do an nslookup for that web app.it's not able to findit.
+    nslookup querry only dns server
+    and same goes with dig command (dig www.google.com) dig is an another tool to test dns name resolution . It returns more details in a similer format as it store on the server.
 
 
 
