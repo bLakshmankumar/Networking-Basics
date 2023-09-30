@@ -1,0 +1,53 @@
+1) On a Linux based system which of the following command can be used to display the kernel ip routing table.
+   ip addr
+   route
+   route table
+   ip link
+   ans : From the route command, we can see the route table of the host system.
+2) Can we assign multiple IPs to a system? Yes
+
+3) Which of the following is preferred device to connect two system which are on different networks?  
+   For example, if System A is on 192.168.1.0/24 network and System B is on 192.168.2.0/24 network.
+   bridge
+   gateway
+   router  (ans)
+   switch
+
+ 4) Can a gateway connect a system to the internet? yes
+
+ 5) We have four app server from app01 to app04. You can access each app from jump host using command ssh app01 and similarly for other apps. Assign new IPs to each host as per details given below:
+
+    a. Assign 172.16.238.15/24 ip address to app01
+    b. Assign 172.16.238.16/24 ip address to app02
+    c. Assign 172.16.239.15/24 ip address to app03
+    d. Assign 172.16.239.16/24 ip address to app04
+    e. We also need to remove existing IPs from these apps after assigning them new IPs but do not remove them right now as it can break your connection,
+       if you are sure you are done with required changes just click on Check button below, it will do the rest.
+
+Warning: If changes aren't made correctly it can break your connection to the environment and you may need to reload the lab.
+CheckCompleteIncomplete
+Apply for app01
+Apply for app02
+Apply for app03
+Apply for app04
+
+   Ans : 
+  -----
+   Note: Please ensure to execute the commands on their respective app nodes.
+ For example:-
+  To assign new IPs for app01 , the below command need to be executed on app01.
+   For app01: sudo ip addr add 172.16.238.15/24 dev eth0
+  Please follow the same procedure for other app nodes as well:
+   For app02: sudo ip addr add 172.16.238.16/24 dev eth0
+   For app03: sudo ip addr add 172.16.239.15/24 dev eth0
+   For app04: sudo ip addr add 172.16.239.16/24 dev eth0
+
+ 6 ) Now if you try to SSH into each app one by one from jump host you will find that you are able to SSH into app01 and app02 but not into app03 and app04. Why so ?
+    
+   We haven't restarted jump host after making changes
+   app03 and app04 are on different network range now
+   apps were not restarted after making changes
+   jump host is using wrong DNS server
+  Ans :
+  -----
+   you can check the same for jump host by running ip a command, you will see that it's in the same network range of app01 and app02 that's why we are able to SSH.
