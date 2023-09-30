@@ -10,6 +10,6 @@ Networking pre-requisites :
      For example We have a 2 servers(server A and server B) vm's or cloud servers, How does server A reaches Server B ? We connect them using switch, and switch create a network containing two the 2 servers.
      To Connect them through a switch we need an interface on each host, physical or virtual depends on host. 
      To See the interfaces of the host We use ip link Command.
-     ![Screenshot 2023-09-30 093114](https://github.com/bLakshmankumar/Networking-Basics/assets/109284987/6bcc9eed-285b-44a4-9f7d-a512cd7d1d46)
+![Screenshot 2023-09-30 093114](https://github.com/bLakshmankumar/Networking-Basics/assets/109284987/6bcc9eed-285b-44a4-9f7d-a512cd7d1d46)
      In this case if we look at the interface named eth0 that we will be using connecting to the switch.
      Lets assume we have a network with 192.168.1.0 we then assign the servers with ip addresses of the same network. For this we use the command ip addr add 192.168.1.10/24 dev ech0
