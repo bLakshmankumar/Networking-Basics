@@ -1,0 +1,14 @@
+Networking pre-requisites :
+===========================
+> Switching 
+> Routing
+> Default Gateway
+> DNS configuration on linux
+-----------------------------------------------------------
+ 1) Switching :
+  ------------
+     For example We have a 2 servers(server A and server B) vm's or cloud servers, How does server A reaches Server B ? We connect them using switch, and switch create a network containing two the 2 servers.
+     To Connect them through a switch we need an interface on each host, physical or virtual depends on host. 
+     To See the interfaces of the host We use ip link Command.
+     In this case if we look at the interface named eth0 that we will be using connecting to the switch.
+     Lets assume we have a network with 192.168.1.0 we then assign the servers with ip addresses of the same network. For this we use the command ip addr add 192.168.1.10/24 dev ech0
