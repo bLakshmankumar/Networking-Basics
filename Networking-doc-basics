@@ -15,4 +15,33 @@ Networking pre-requisites :
      Once the links are up and once Ip addresses are assigned to the servers can now communicate with each other through the switch.
      The switch can only enab;e communication with in a network. which means it reaceive packets from a host on the network and delivered to other serverswith in the same network.
 
+  2) Routing : 
+     ---------
+     A Router helps connnects two networks together and Routers, which are devices responsible for routing, maintain a routing table. 
+     This table contains information about the available paths to different destinations and helps the router make decisions on how to forward packets.
+     Example:
+     --------
+     Let's consider a practical example of routing in the context of the internet. Imagine you are sitting in your home in New York and want to access a website hosted in California.
 
+     Packet Creation:
+     ----------------
+     The data (request for the website) is broken down into packets.
+     Routing Table:
+     --------------
+     Your home router has a routing table with information about the paths to various destinations, including the path to California.
+     Destination Address:
+     ---------------------
+     The destination address in the packet indicates that it needs to reach a server in California.
+     Routing Decision:
+     -----------------
+     Your home router looks at its routing table, determines the best path to California, and forwards the packet to the next router on that path.
+     Forwarding:
+     -----------
+     Each router along the way makes similar decisions, forwarding the packet towards California.
+     Arrival at Destination:
+     -----------------------
+     The packet reaches the destination server in California, and the server responds by sending packets back along the same path.
+      
+      This process ensures that data can be efficiently and reliably transmitted between devices across different networks, 
+      overcoming the geographical and topological challenges of the network infrastructure.
+      Routing is essential for the functioning of the internet and other computer networks.
